@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body
+body 
 {
     font-family: 'Fira Code', monospace;
     background-image: url(https://lh3.googleusercontent.com/pw/AMWts8Db4QlToxBxpe_Vh_MP-rkxFWwZxQDjsyw75btoEs_znek5ACPxcjYkPFuz8hwHBcOX4qnP7vZ2l5b4RoZ-uCUkkYzv2ajNMkkeUhyHB4SxaFNg72i4ONf4o2SlyZk7ZmLY8sJVwRmiNRMKXQbhKEZIZe9zHpjRnF3MIze4pGRO1u35NZjqNt-AGgO789NS4l8eb6NpbBZQB4PCpvbjmDk7BEm4ASf6ENX5c94QPdfyRQNyHnOQwULyUMZhcAmu-18leOIu0YQXzhdTKK3LZglSkccwPbDa0MjB2PLLie_kTC-wlJLHR6u8cLGmdYI38DlM7WvAyX8aEpbLLuekR1m9gHAwlL1nOpkI-ehNdmzNdgoftUm1Uvz1GX3ps_piVXpOuR0_JfIkvrurctNc3dFPyyCYn0Ig37fSnMCZ9WfykZfXHgnpo65Uh0ztH_j0TP6yt2F4BrVtkW9cUr51NbHSkaq9xovC3xDzD4cqqLeEfLfdMqiGbzxtNVokM8BIJHzeu-ncryYZTBsq1SPzhApdV5T1zCEedEleG-FS6EpVc9iMT6_biwTrhdeLkVG13u9z7O6KyE2W0uTAbBhjPtncoyon6e4lIPaxnh0WmvzG6vS2hneT_3rqoYqY3Nafr_hzY9kzLx7Abr2oARU5Pt2xhbxYAmgHT9KYc090aYRCfdlnl_szDQ3FTpDm_WZUB4Pf0wy6-BOqXAhnD4Rv3P3pbujecAG7hXqU8s_DxrDUxDuBLPC5zPXXi6_qSUjAdgoZYNoCGDvMA6NVN3K7IuE72ZOufMrMcPmfhjTtgwY1lkU3aH4tq3-UcWxp2zgGixD1ts0ml92nyR4aV4WxFzfn8Gqpb_pDSBDVCGUQZLgzbR7Ghisx5nH6kgo6d1Gk18ptyNsggf6eoIUw1mqNyXBCq5PYhlCaFdiklgygpndowF6upHOC08hnUMKn=w1659-h933-no?authuser=0); /* Adicione esta linha */
@@ -15,7 +15,7 @@ body
     color: #333;
     line-height: 1.3;
 }
- {
+{
     font-family: 'Fira Code', monospace;
     background-color: #f0f0f0;
     color: #333;
@@ -47,7 +47,7 @@ nav ul li a:hover {
 }
 
 .content-box {
-    background-color: #171f29; /* Cor do conteúdo OpenAI */
+    background-color: rgba(23, 31, 41, 0.9); /* Cor do conteúdo OpenAI com 10% de transparência */
     color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -58,7 +58,7 @@ nav ul li a:hover {
 }
 
 .content-box pre {
-    background-color: #1e1e1e;
+    background-color: #0d0d0d;
     padding: 1rem;
     border-radius: 6px;
     color: #9cdcfe;
@@ -84,7 +84,6 @@ footer {
     color: #f0f0f0;
 }
 
-/* Adicione estas regras para estilizar o menu hamburguer */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -98,7 +97,6 @@ footer {
     background-color: #f0f0f0;
 }
 
-/* Exibir o menu hamburguer e ocultar o menu padrão em telas menores */
 @media screen and (max-width: 768px) {
     nav ul {
         display: none;
@@ -109,7 +107,6 @@ footer {
     }
 }
 
-/* Estilos para o menu responsivo quando o menu hamburguer estiver ativo */
 .show-menu ul {
     display: flex;
     flex-direction: column;
@@ -136,11 +133,12 @@ footer {
   animation: typing 3s steps(30, end) 1 forwards; /* Adicione 'forwards' para manter o estado final da animação */
   text-align: center; /* Adicione isso para centralizar o texto após a animação */
 }
+
 .fade-in {
     opacity: 0;
     animation-name: fadeIn;
-    animation-duration: 1.5s; /* Aumente a duração da animação para 2 segundos */
-    animation-timing-function: ease-out; /* Mude para 'ease-out' para uma transição mais suave */
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 
@@ -148,10 +146,3 @@ footer {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-
-
-
-
-
-
-
