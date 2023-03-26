@@ -125,5 +125,20 @@ footer {
   animation: typing 3s steps(30, end) 1 forwards; /* Adicione 'forwards' para manter o estado final da animação */
   text-align: center; /* Adicione isso para centralizar o texto após a animação */
 }
+.fade-in {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.7s; /* Aumente a duração da animação para 2 segundos */
+    animation-timing-function: ease-out; /* Mude para 'ease-out' para uma transição mais suave */
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+}
+
 
 

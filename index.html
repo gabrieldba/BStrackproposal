@@ -11,7 +11,7 @@
     </footer>
 </head>
 <body>
-    <header>
+    <header class="fade-in">
         <nav>
             <ul>
                 <li><a href="#introducao">Introdução</a></li>
@@ -27,11 +27,11 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="fade-in">
         <section id="introducao" class="content-box">
             <h1 class="typing-animation">Introdução</h1>
             <pre>
-               <p>A empresa BSTRACK está buscando melhorar a eficiência e a segurança do processo de abastecimento dos caminhões de seus  
+               <p>A empresa BStrack está buscando melhorar a eficiência e a segurança do processo de abastecimento dos caminhões de seus  
 clientes, bem como garantir a identificação correta dos motoristas responsáveis pelo abastecimento. Para atender a essa demanda, proponho o desenvolvimento de um aplicativo móvel que registre o abastecimento dos caminhões, local e verifique
 a identidade dos motoristas por meio de reconhecimento facial.</p>
             </pre>
@@ -60,7 +60,7 @@ facial.
         <section id="beneficios" class="content-box">
             <h1 class="typing-animation">Benefícios</h1>
             <pre>
-                <p>Ao desenvolver e implementar esse aplicativo, o app da BSTRACK poderá fornecer os seguintes benefícios:</p>
+                <p>Ao desenvolver e implementar esse aplicativo, o app da BStrack poderá fornecer os seguintes benefícios:</p>
     <li>Melhor controle e monitoramento do processo de abastecimento, permitindo um acompanhamento mais preciso dos custos e
   consumo de combustível.
 <li>Maior segurança ao garantir que apenas motoristas autorizados possam registrar o abastecimento.
@@ -74,7 +74,7 @@ facial.
 
         <section id="conclusao" class="content-box">
             <h1 class="typing-animation">Conclusão</h1>
-            <pre>
+          <pre>
                 <p>O aplicativo de Registro de Abastecimento, local e Verificação de Motoristas ajudará empresas a melhorar a eficiência e a  
 segurança no processo de abastecimento, garantir a identificação correta dos motoristas e otimizar a logística geral da 
 empresa. Com a implementação deste aplicativo, a empresa poderá reduzir custos, melhorar a qualidade do serviço e a satisfação dos motoristas, além de obter uma vantagem competitiva no mercado de transporte.</p>
@@ -130,17 +130,27 @@ de caminhões e verificar a identidade dos motoristas através do reconhecimento
     </main>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-    const typingElements = document.querySelectorAll('.typing-animation');
-    // Remova o forEach, pois não precisamos definir um animation-delay
-});
-
-
+            const typingElements = document.querySelectorAll('.typing-animation');
+        });
 
         document.querySelector('.hamburger').addEventListener('click', function () {
             document.querySelector('nav').classList.toggle('show-menu');
+        });
+
+        // Adicione este script para rolagem suave
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
     <footer>
         <p>Proposta de Gabriel Santos para BStrack © 2023. Todos os direitos reservados.</p>
     </footer>
+	
+</body>
 </html>
