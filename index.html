@@ -9,10 +9,48 @@
 	<footer>
         <p>Proposta de Gabriel Santos para BStrack</p>
     </footer>
+	<title>Exemplo de Imagem Centralizada</title>
+<<title>Exemplo de Imagem com Animação Fade</title>
+<style>
+  .center-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+    opacity: 0;
+    animation: fadeAnimation 3s forwards;
+  }
+
+  .container {
+    text-align: center;
+    position: relative;
+  }
+
+  @keyframes fadeAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+</style>
+>
 </head>
 <body>
     <header class="fade-in">
-	<div class="transparent-bg">
         <nav>
             <ul>
                 <li><a href="#introducao">Introdução</a></li>
@@ -22,13 +60,18 @@
                 <li><a href="#orcamento">Orçamento</a></li>
             </ul>
             <div class="hamburger">
-			<div class="transparent-bg">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </nav>
     </header>
+	<img src="https://bstrac.com.br/home/wp-content/webp-express/webp-images/uploads/2023/03/BSTRAC_logo-01_branco_sem-fundo.png.webp" alt="Sua Imagem" class="center-image">
+
+<div class="container">
+ 
+
+  
     <main class="fade-in">
         <section id="introducao" class="content-box">
 		<div class="transparent-bg">
