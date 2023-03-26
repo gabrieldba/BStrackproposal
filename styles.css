@@ -23,7 +23,7 @@ body
 }
 
 header {
-    background-color: #171f29; /* Cor do cabeçalho OpenAI */
+    background-color: rgba(13, 13, 13, 0.87); /* Cor do cabeçalho #0d0d0d com 90% de transparência */
     padding: 1rem;
 }
 
