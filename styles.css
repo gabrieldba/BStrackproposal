@@ -132,7 +132,7 @@ footer {
   left: 50%;
   animation: typing 3s steps(30, end) 1 forwards; /* Adicione 'forwards' para manter o estado final da animação */
   text-align: center; /* Adicione isso para centralizar o texto após a animação */
-  animation-delay: 0.2s;
+  animation-delay: 0.0s;
 }
 
 .fade-in {
