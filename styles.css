@@ -47,7 +47,7 @@ nav ul li a:hover {
 }
 
 .content-box {
-    background-color: rgba(23, 31, 41, 0.9); /* Cor do conteúdo OpenAI com 10% de transparência */
+    background-color: rgba(23, 31, 41, 0.9); /* Cor do conteúdo com 10% de transparência */
     color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -80,7 +80,7 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #171f29; /* Cor do rodapé OpenAI */
+    background-color: #171f29; /* Cor do rodapé */
     color: #f0f0f0;
 }
 
